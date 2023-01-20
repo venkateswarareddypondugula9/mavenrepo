@@ -1,6 +1,6 @@
 node('slave') {
     stage('download') {
-      git branch: '$branch', changelog: false, credentialsId: 'be276873-5523-450e-994d-6e7573f41ac6', poll: false, url: 'https://github.com/venkateswarareddypondugula9/mavenrepo.git'
+      git branch: '$feat01', changelog: false, credentialsId: 'be276873-5523-450e-994d-6e7573f41ac6', poll: false, url: 'https://github.com/venkateswarareddypondugula9/mavenrepo.git'
 }
     stage('build') {
       sh 'mvn package'
